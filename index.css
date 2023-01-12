@@ -89,4 +89,33 @@ body {
 	height: 250px;
 	width: 500px;
 	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.news1 {
+	border: solid black;
+	height: 150px;
+	width: 150px;
+}
+.news2 {
+	border: solid black;
+	height: 150px;
+	width: 150px;
+}
+.news3 {
+	border: solid black;
+	height: 150px;
+	width: 150px;
+}
+.news1-1{
+	height: 50px;
+	width: 150px;
+}
+.news1-2 {
+	height: 100px;
+	width: 150px;
+}
+.img2 {
+	height: 50px;
+	width: 150px;
 }
