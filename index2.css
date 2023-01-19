@@ -53,6 +53,7 @@ body {
 	height: 400px;
 	width: 250px;
 	border: solid black;
+	overflow: scroll;
 }
 .scroll {
 	height: 100px;
