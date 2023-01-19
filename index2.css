@@ -13,6 +13,7 @@ body {
 	height: 650px;
     width: 700px;
     border: solid black;
+    margin-top: 101px;
 }
 .top-side {
 	background-image: url(Ronaldo.png);
@@ -69,74 +70,4 @@ body {
 .p-scroll {
 	font-size: 13pt;
 	font-family: opensans, sans-serif;
-}
-@media screen and (max-width: 868px){
-	.window {
-	height: 300px;
-    width: auto;
-    display: flex;
-    flex-direction: column;
-}
-.main {
-	height: 320px;
-    width: 350px;
-    border: solid black;
-}
-.top-side {
-	background-image: url(Ronaldo.png);
-    background-size: 362px;
-    height: 160px;
-    width: 350px;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-.main-p {
-	font-size: 7pt;
-    font-family: opensuns, sans-serif;
-    color: Black;
-}
-.bottom-side {
-	height: 160px;
-    width: 350px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-.bottom-news {
-	height: 80px;
-    width: 115px;
-    border: solid;
-}
-.img-news {
-	height: 40px;
-    width: 115px;
-}
-.bottom-p {
-	font-size: 5pt;
-    font-family: opensans, sans-serif;
-    margin-left: 5px;
-}
-.scroll-news {
-	height: 200px;
-	width: 125px;
-	border: solid black;
-	overflow: scroll;
-}
-.scroll {
-	height: 50px;
-    width: 125px;
-    display: flex;
-    align-items: center;
-}
-.img-scroll {
-	height: 50px;
-	width: 100px;
-}
-.p-scroll {
-	font-size: 7pt;
-	font-family: opensans, sans-serif;
-
-
 }
