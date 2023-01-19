@@ -42,3 +42,9 @@ body {
 	font-size: 10pt;
     font-family: opensans, sans-serif;
     margin-left: 10px;
+}
+@media screen and (max-width: 768px){
+	.bottom-news {
+		width: 100%;
+	}
+}
