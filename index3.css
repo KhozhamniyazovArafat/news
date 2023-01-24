@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 .bottom-news {
 	height: 200px;
@@ -46,5 +47,8 @@ body {
 @media screen and (max-width: 768px){
 	.bottom-news {
 		width: 100%;
+	}
+	.img-news {
+		width: 200px;
 	}
 }
