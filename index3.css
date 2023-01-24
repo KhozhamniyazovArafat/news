@@ -6,6 +6,7 @@ body {
     flex-wrap: wrap;
     height: 100%;
     width: 100%;
+    flex-direction: row;
 }
 .main {
 	height: 800px;
@@ -38,7 +39,7 @@ body {
 }
 .bottom-news {
 	height: 200px;
-    width: 360px;
+    width: 250px;
     border: solid;
 }
 .img-news {
@@ -77,8 +78,18 @@ body {
 	.img-news {
 		width: 200px;
 	}
+    .scroll {
+        position: relative;
+        top: 212px;
+        left: -236px;
+        overflow: unset;
+        border: unset;
+    }
+    .window {
+        align-items: flex-start;
+    }
 }
-@media screen and (min-width: 696px){
+@media screen and (max-width: 696px){
     .scroll {
         overflow: unset;
         position: relative;
@@ -86,10 +97,14 @@ body {
         left: -208px;
         border: unset;
     }
+    .window {
+        align-items: flex-start;
+    }
 }
 @media screen and (max-width: 482px){
     .window {
         flex-direction: column;
+        align-items: flex-start;
     }
     .scroll {
         overflow: unset;
