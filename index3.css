@@ -1,9 +1,15 @@
 body {
 	background-color: lightgrey;
 }
+.window {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
 .main {
 	height: 800px;
-    width: 1100px;
+    width: 850px;
     border: solid black;
     margin: 0 auto;
 }
@@ -11,7 +17,7 @@ body {
 	background-image: url(Ronaldo.png);
     background-size: 1090px;
     height: 400px;
-    width: 1100px;
+    width: 850px;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
@@ -24,7 +30,7 @@ body {
 }
 .bottom-side {
 	height: 400px;
-    width: 1100px;
+    width: 850px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -37,12 +43,32 @@ body {
 }
 .img-news {
 	height: 100px;
-    width: 360px;
+    width: 250px;
 }
 .bottom-p {
 	font-size: 10pt;
     font-family: opensans, sans-serif;
     margin-left: 10px;
+}
+.scroll {
+    border: solid black;
+    height: 800px;
+    width: 250px;
+    margin: 0 auto;
+    overflow: scroll;
+}
+.scroll-news {
+    height: 200px;
+    width: 250px;
+    border-bottom: solid white;
+}
+.scroll-img {
+    height: 150px;
+    width: 150px;
+}
+.scroll-p {
+    font-size: 10pt;
+    font-family: opensans, sans-serif;
 }
 @media screen and (max-width: 768px){
 	.bottom-news {
@@ -51,4 +77,25 @@ body {
 	.img-news {
 		width: 200px;
 	}
+}
+@media screen and (min-width: 696px){
+    .scroll {
+        overflow: unset;
+        position: relative;
+        top: 212px;
+        left: -208px;
+        border: unset;
+    }
+}
+@media screen and (max-width: 482px){
+    .window {
+        flex-direction: column;
+    }
+    .scroll {
+        overflow: unset;
+        position: relative;
+        top: 211px;
+        left: -298px;
+        border: unset;
+    }
 }
