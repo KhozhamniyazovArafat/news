@@ -34,17 +34,17 @@ body {
     width: 850px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: center;
 }
 .bottom-news {
 	height: 200px;
-    width: 250px;
-    border: solid;
+    width: 150px;
+    border: solid black;
 }
 .img-news {
 	height: 100px;
-    width: 250px;
+    width: 150px;
 }
 .bottom-p {
 	font-size: 10pt;
@@ -71,6 +71,16 @@ body {
     font-size: 10pt;
     font-family: opensans, sans-serif;
 }
+@media screen and (max-width: 1029px){
+    .window {
+        align-items: flex-start;
+    }
+    .scroll {
+        width: 100%;
+        overflow: unset;
+        border: unset;
+    }
+}
 @media screen and (max-width: 768px){
 	.bottom-news {
 		width: 100%;
@@ -80,10 +90,11 @@ body {
 	}
     .scroll {
         position: relative;
-        top: 212px;
-        left: -236px;
+        top: 620px;
+        left: 6px;
         overflow: unset;
         border: unset;
+        width: 100%;
     }
     .window {
         align-items: flex-start;
@@ -93,9 +104,10 @@ body {
     .scroll {
         overflow: unset;
         position: relative;
-        top: 212px;
-        left: -208px;
+        top: 622px;
+        left: 4px;
         border: unset;
+        width: 100%;
     }
     .window {
         align-items: flex-start;
@@ -107,10 +119,11 @@ body {
         align-items: flex-start;
     }
     .scroll {
-        overflow: unset;
+            overflow: unset;
         position: relative;
-        top: 211px;
-        left: -298px;
+        top: 620px;
+        left: -202px;
         border: unset;
+        width: 100%;
     }
 }
