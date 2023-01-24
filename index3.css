@@ -33,18 +33,19 @@ body {
 	height: 400px;
     width: 850px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    align-content: space-around;
+    flex-direction: column;
 }
 .bottom-news {
-	height: 200px;
-    width: 150px;
+	height: 179px;
+    width: 224px;
     border: solid black;
 }
 .img-news {
 	height: 100px;
-    width: 150px;
+    width: 224px;
 }
 .bottom-p {
 	font-size: 10pt;
@@ -80,37 +81,67 @@ body {
         overflow: unset;
         border: unset;
     }
+    .scroll-news {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .scroll-p {
+        font-size: 20pt;
+    }
 }
 @media screen and (max-width: 768px){
-	.bottom-news {
-		width: 100%;
-	}
-	.img-news {
-		width: 200px;
-	}
+    .bottom-side {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .img-news {
+        height: 73px;
+        width: 100px;
+    }
+    .bottom-news{
+        height: 73px;
+        width: 100%;
+        display: flex;
+    }
     .scroll {
-        position: relative;
-        top: 620px;
-        left: 6px;
         overflow: unset;
         border: unset;
         width: 100%;
     }
     .window {
         align-items: flex-start;
+    }
+    .scroll-news {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .scroll-p {
+        font-size: 20pt;
     }
 }
 @media screen and (max-width: 696px){
     .scroll {
         overflow: unset;
-        position: relative;
-        top: 622px;
-        left: 4px;
         border: unset;
         width: 100%;
     }
     .window {
         align-items: flex-start;
+    }
+    .scroll-news {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .scroll-p {
+        font-size: 20pt;
     }
 }
 @media screen and (max-width: 482px){
@@ -125,5 +156,14 @@ body {
         left: -202px;
         border: unset;
         width: 100%;
+    }
+    .scroll-news {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .scroll-p {
+        font-size: 20pt;
     }
 }
